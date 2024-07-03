@@ -3,67 +3,31 @@ $primary:#4a4a4a;
 $numCol:#e4c800;
 $spacer: 1rem!default;
 $spacers: (
-    6: ($spacer * 0.625), //10px icon space between
-    7: $spacer * 0.8125, //13px logo mt 
-    8: ($spacer * 1.4375), //23px icons mt
-    9: ($spacer * 2.5), //40px search icon ms
-    10: ($spacer * 9.437), //151px logo ms
-    11: ($spacer * 10.125), //162px icons container me
-    12: ($spacer * 0.875), //14px navbar mt
-    13: $spacer * 6.875, // gap navbar ele
-    14: $spacer * 5, // news mt
-    15: $spacer * 1.875, // news card mt between 
-    16: $spacer * 1.875, // 30px gap news 
-    17: $spacer * 1.15625, // px 
-    18: $spacer * 0.90625, // py
+    6: ($spacer * 0.625), //10px 
+    7: $spacer * 0.8125, //13px 
+    8: ($spacer * 1.4375), //23px 
+    9: ($spacer * 2.5), //40px 
+    10: ($spacer * 9.437), //151px 
+    11: ($spacer * 10.125), //162px 
+    12: ($spacer * 0.875), //14px
+    13: $spacer * 6.875, // 110px
+    14: $spacer * 5, // 80px 
+    15: $spacer * 1.875, // 30px
+    16: $spacer * 1.875, // 30px 
+    17: $spacer * 1.15625, // 18.5px
+    18: $spacer * 0.90625, // 14.5px
     19: $spacer * 1.8125, // 29px
-    20: $spacer * 1, 
+    20: $spacer * 1, // 16px
     21: $spacer * 1.25, // 20px
     22:$spacer * 5, // 80px 
     23:$spacer *11.3125, //181px 
     24:$spacer*0.9375, // 15px
-) !default;
-body{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-.navbar{ 
-   gap: 1rems; 
-}
+    25:$spacer*18.375,//294px
 
-.c-item {
-    width: 100%;
-    height: 565px;
-    overflow: hidden;
-}
-.carousel-item {
-    position: relative;
-}
-.c-img {
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-}
-.c-img-z-1 {
-    position: absolute;
-    top:50%;
-    right:0;
-    width: 491px;
-    height: 322px;
-    z-index: 1;
-    transform: translateY(-50%);
-}
+) !default;
 
 .custom-bg{
     background-color: rgba(2, 26, 78, 0.8);
-}
-.ddd{
-    width: 100%;
-    height: 100px;
-    margin-bottom: 50px;
 }
 .number-achieve-cl{
     color:#e4c800;
@@ -75,19 +39,14 @@ body{
     color:#e4c800;
     font-size:24px;
 }
-.position-relative {
-    position: relative;
-}
-
-.position-absolute {
-    position: absolute;
-}
 .date-pos {
     z-index: 1;
 }
 
 
+
 @import "../node_modules/bootstrap/scss/bootstrap";
+
 
 
 .carousel-indicators {
