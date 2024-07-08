@@ -1,0 +1,116 @@
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-right: 15%;
+  margin-bottom: 1rem;
+  margin-left: 15%;
+}
+
+.carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 7px;
+  height: 7px;
+  padding: 0;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1;
+  border-radius: 50%;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: 0.5;
+  transition: opacity 0.6s ease;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+  background-color: white;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 565px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .carousel-item img {
+    height: 400px;
+  }
+}
+@media (max-width: 767px) {
+  .carousel-item img {
+    height: 300px;
+  }
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(2, 26, 78, 0.75);
+  padding: 64px 48px 63px 47px;
+  width: 450px;
+  height: 322px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .carousel-caption {
+    width: 250px;
+    height: 200px;
+    padding: 44px 28px 43px 27px;
+  }
+}
+@media (max-width: 767px) {
+  .carousel-caption {
+    width: 200px;
+    height: 150px;
+    padding: 34px 18px 33px 17px;
+  }
+}
+
+.carousel-caption h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: TrajanPro;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .carousel-caption h2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .carousel-caption h2 {
+    font-size: 15px;
+  }
+}
+
+.carousel-caption h2::first-letter {
+  font-size: 50px;
+  margin-right: 2px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .carousel-caption h2::first-letter {
+    font-size: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .carousel-caption h2::first-letter {
+    font-size: 20px;
+  }
+}

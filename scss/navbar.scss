@@ -1,4 +1,6 @@
+// Variables 
 $dark: #021a4e;
+
 // Underline effect for navbar items 
 .navbar-nav .nav-link {
     color: white;
@@ -24,23 +26,69 @@ $dark: #021a4e;
     left: 0;
 }
 
-// Offcanvas navbar items color
-.offcanvas-body .nav-link {
-    color: $dark !important; 
+.navbar-nav .nav-link.fab,
+.navbar-nav .nav-link.fas {
+    color: grey !important; // icons color
 }
+
+// Offcanvas navbar items 
+.offcanvas-body .nav-link {
+    color: $dark !important; // other items
+    position: relative;
+    text-decoration: none;
+    margin-right: 8px;
+}
+
+// Dark color border bottom for items 
+.offcanvas-body .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%; 
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $dark; 
+    transition: width 0.25s ease-out, left 0.25s ease-out, background-color 0.3s ease-out; 
+    margin-bottom: 4px;
+}
+
+// Hover effect 
+.offcanvas-body .nav-link:hover::after {
+    width: 100%; 
+    background-color: yellow; 
+}
+
+// Adjust the active state as needed 
+.offcanvas-body .nav-link.active::after {
+    width: 100%;
+    background-color: yellow; 
+}
+
 // Icons color and hover
 .navbar-nav .nav-link.fab,
 .navbar-nav .nav-link.fas {
-    color: $dark;
     transition: transform 0.3s ease; 
 }
+
 // Scale up the icon on hover
 .navbar-nav .nav-link.fab:hover,
 .navbar-nav .nav-link.fas:hover {
     transform: scale(1.5);
 }
+
 // Remove underline for icons 
 .navbar-nav .nav-link.fab::after,
 .navbar-nav .nav-link.fas::after {
     display: none;
+}
+
+// Search Form 
+#searchForm {
+    transition: all 0.5s ease-in-out;
+    max-width: 0;
+    overflow: hidden;
+}
+
+#searchForm.show {
+    max-width: 143px;
 }

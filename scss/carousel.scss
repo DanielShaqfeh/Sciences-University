@@ -1,0 +1,119 @@
+// Variables 
+$dark: #021a4e; 
+
+// Carousel indicators shape 
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+}
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 7px;
+    height: 7px;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1;
+    border-radius: 50%;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: 0.5;
+    transition: opacity 0.6s ease;
+} 
+.carousel-indicators .active {
+    opacity: 1;
+    background-color: white;
+}
+  
+
+// Mixin for responsive design
+@mixin for-mobile {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+@mixin for-tablet {
+    @media (min-width: 768px) and (max-width: 991px) {
+        @content;
+    }
+}
+
+// Carousel item image height
+.carousel-item img {
+    width: 100%;
+    height: 565px; // Default
+    @include for-tablet {
+        height: 400px;
+    }
+    @include for-mobile {
+        height: 300px;
+    }
+    object-fit: fill;
+}
+
+// Carousel caption styling
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(2, 26, 78, 0.75);
+    padding: 64px 48px 63px 47px;
+    width: 450px; // 491px => but wont be the same as design  "Note"
+    height: 322px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    @include for-tablet {
+        width: 250px;
+        height: 200px;
+        padding: 44px 28px 43px 27px;
+    }
+    @include for-mobile {
+        width: 200px;
+        height: 150px;
+        padding: 34px 18px 33px 17px;
+    }
+}
+
+// Overllay caption 
+.carousel-caption h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: TrajanPro;
+    @include for-tablet {
+        font-size: 20px;
+    }
+    @include for-mobile {
+        font-size: 15px;
+    }
+}
+
+// Making the first letter of the caption larger
+.carousel-caption h2::first-letter {
+    font-size: 50px;
+    margin-right: 2px;
+    @include for-tablet {
+        font-size: 25px;
+    }
+    @include for-mobile {
+        font-size: 20px;
+    }
+}
