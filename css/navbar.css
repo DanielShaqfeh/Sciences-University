@@ -30,6 +30,10 @@
   color: grey !important;
 }
 
+.navbar-nav .nav-link:not(.fab):not(.fas) {
+  font-family: "Open Sans", sans-serif;
+}
+
 .offcanvas-body .nav-link {
   color: #021a4e !important;
   position: relative;

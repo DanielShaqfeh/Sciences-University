@@ -26,21 +26,21 @@ $spacers: (
     26:$spacer*4.375, // 70px
     27:$spacer*7.5,// 120px
     28:$spacer*3.75,//60px
-
-
+    29:$spacer*0.75,//12px 
 ) !default;
 body{
-    font-family: OpenSans;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-.card-title {
+.news-title {
     position: relative;
     display: inline-block;
     padding-bottom: 3px; 
+    font-family: 'Open Sans', sans-serif;
 }
-.card-title::after {
+.news-title::after {
     content: '';
     position: absolute;
     left: 0;
@@ -51,8 +51,25 @@ body{
     
 }
 
+.underline-title {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 3px;
+}
 
-
+.underline-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: $dark; 
+}
+  
+.opensans-font{
+    font-family: 'Open Sans', sans-serif;
+}
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 

@@ -26,14 +26,20 @@ $dark: #021a4e;
     left: 0;
 }
 
+// icons color
 .navbar-nav .nav-link.fab,
 .navbar-nav .nav-link.fas {
-    color: grey !important; // icons color
+    color: grey !important; 
+}
+
+// font-family to nav-links but not icons 
+.navbar-nav .nav-link:not(.fab):not(.fas) {
+    font-family: 'Open Sans', sans-serif;
 }
 
 // Offcanvas navbar items 
 .offcanvas-body .nav-link {
-    color: $dark !important; // other items
+    color: $dark !important; // other items 
     position: relative;
     text-decoration: none;
     margin-right: 8px;
