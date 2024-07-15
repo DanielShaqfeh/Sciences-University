@@ -13,3 +13,11 @@
   color: #e4c800;
   font-size: 24px;
 }
+
+.opensans-font {
+  font-family: "Open Sans", sans-serif;
+}
+
+.hover-pointer {
+  cursor: pointer;
+}

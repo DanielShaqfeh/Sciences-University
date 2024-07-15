@@ -1,0 +1,72 @@
+$dark: #021a4e;
+$yellowColor:#e4c800;
+
+// Mixin for responsive design
+@mixin for-mobile {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+@mixin for-tablet {
+    @media (min-width: 768px) and (max-width: 991px) {
+        @content;
+    }
+}
+#form-container{
+    width:  946px;
+    @include for-tablet {
+        width: 746px;
+    }
+    @include for-mobile {
+        width: 346px;
+    }
+}
+
+// GET IN TOUCH title 
+.underline-title {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 3px;
+    font-size: 36px;
+    @include for-tablet {
+        font-size: 26px;
+    }
+    @include for-mobile {
+        font-size: 20px;
+    }
+}
+
+.underline-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: $dark; 
+}
+
+
+.submit-btn {
+    font-size:18px;
+    font-family: 'Raleway';
+    font-weight: bold;
+    color: $yellowColor;
+    background-color: $dark;
+    padding: 14px 40px;
+    @include for-tablet {
+        font-size: 16px;
+    }
+    @include for-mobile {
+        font-size: 14px;
+    }
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    color: #a89808; 
+    background-color: $dark; 
+  }
+
+

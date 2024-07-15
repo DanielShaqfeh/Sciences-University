@@ -1,0 +1,83 @@
+$dark: #021a4e;
+$yellowColor: #e4c800;
+
+// Mixin for responsive design
+@mixin for-mobile {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+@mixin for-tablet {
+    @media (min-width: 768px) and (max-width: 991px) {
+        @content;
+    }
+}
+
+// apply container
+.overlay-container {
+    position: relative;
+    width: 100%;
+    height: 549px; // Default height for large screens
+    @include for-tablet {
+        height: 449px;
+    }
+    @include for-mobile {
+        height: 300px;
+    }
+}
+
+// apply background image
+.overlay-image {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+// Container content 
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+    
+    p {
+        color: $dark;
+        font-size: 58px;
+        @include for-tablet {
+            font-size:48px;
+        }
+        @include for-mobile {
+            font-size:28px;
+        }
+        text-shadow: 0 2px 4px rgba(83, 83, 83, 0.48);
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 800;
+        text-align: center;
+        line-height: 1.59;
+        margin: 0 0 30px;
+    }
+
+    .btn {
+        font-size: 54px;
+        @include for-tablet {
+            font-size:34px;
+        }
+        @include for-mobile {
+            font-size:24px;
+        }
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 800;
+        color: $yellowColor;
+        padding: 18px 36px;
+        line-height: 1.3;
+        text-decoration: none;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        &:hover {
+            color: #a89808; 
+            background-color: $dark; 
+        }
+    }
+}

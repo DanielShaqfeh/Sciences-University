@@ -1,0 +1,93 @@
+footer {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.row {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer-title {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.93px;
+  color: #e4c800;
+}
+
+.footer-item {
+  position: relative;
+  display: block;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.82px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer-column {
+  position: relative;
+  padding-left: 20px;
+}
+.footer-column::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 2px;
+  top: 0;
+  bottom: 10px;
+  border-left: 1px solid #4d4d4d;
+  transform-origin: top;
+  margin-left: 4.5px;
+}
+
+.flip-icon {
+  transform: scaleX(-1);
+}
+
+.footer-item::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 50%;
+  background-color: yellow;
+  transition: width 0.25s ease-out, left 0.25s ease-out;
+}
+
+.footer-item:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.footer-item.active::after {
+  width: 100%;
+  left: 0;
+}
+
+.copyright-style {
+  font-size: 11px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.footer-image img {
+  -o-object-fit: fill;
+     object-fit: fill;
+}

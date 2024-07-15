@@ -1,0 +1,101 @@
+$yellowColor:#e4c800;
+
+// Ensure full width footer
+footer {
+    width: 100%;
+    box-sizing: border-box;
+}
+.footer-container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    box-sizing: border-box;
+}
+.row {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//Footer style
+.footer-title {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.93px;
+    color: $yellowColor;
+}
+
+// links
+.footer-item {
+    position: relative;
+    display:block;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.82px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+// Verical line 
+.footer-column {
+    position: relative;
+    padding-left: 20px;
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 2px;
+        top: 0;
+        bottom: 10px; 
+        border-left: 1px solid #4d4d4d;
+        transform-origin: top;
+        margin-left: 4.5px;
+    }
+}
+
+// phone icon is facing the other way so flipped it 
+.flip-icon {
+    transform: scaleX(-1); 
+}
+
+// links underline hover effect
+.footer-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    background-color: yellow;
+    transition: width 0.25s ease-out, left 0.25s ease-out;
+}
+.footer-item:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+// when link is clicked the line stayes 
+.footer-item.active::after { 
+    width: 100%;
+    left: 0;
+}
+
+// Copyright text 
+.copyright-style{
+    font-size: 11px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+// Ensure image inside container 
+.footer-image img{
+    object-fit:fill;
+}
+
+  

@@ -8,8 +8,12 @@
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/customs.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/apply.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
     
 </head>
 <body>
@@ -98,7 +102,7 @@
     </nav>
   </header> 
 
- 
+  <!-- Carousel -->
   <div id="carouselExampleIndicators" class="carousel slide w-100" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -107,19 +111,19 @@
     </div>
     <div class="carousel-inner w-100">
       <div class="carousel-item active" data-bs-interval="3000">
-        <img src="assets/images/first-img-slider.png" class="d-block w-100" alt="...">
+        <img src="assets/images/carouselImages/first-img-slider.png" class="d-block w-100" alt="...">
         <div class="carousel-caption">
           <h2>ONE OF THE TOP 10 UNIVERSITIES IN DESIGN</h2>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="3000">
-        <img src="assets/images/second-img-carousel.jpg" class="d-block w-100" alt="...">
+        <img src="assets/images/carouselImages/second-img-carousel.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption">
           <h2>ONE OF THE TOP 10 UNIVERSITIES IN DESIGN</h2>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="3000">
-        <img src="assets/images/third-img-carousel.jpg" class="d-block w-100" alt="...">
+        <img src="assets/images/carouselImages/third-img-carousel.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption">
           <h2>ONE OF THE TOP 10 UNIVERSITIES IN DESIGN</h2>
         </div>
@@ -144,33 +148,33 @@
             <div class="row">
                 <div class="col-md-6 mb-15">
                     <div class="position-relative" style="max-width: 100%;">
-                        <img src="assets/images/under-graduated-img.png" alt="..." class="img-fluid w-100 h-100 object-fit-cover">
+                        <img src="assets/images/courcesImages/under-graduated-img.png" alt="..." class="img-fluid w-100 h-100 object-fit-cover">
                         <div class="position-absolute bottom-0 custom-bg text-white text-center justify-content-center align-items-center d-flex px-3 py-2 w-100" style="height: 51px;">
-                            <span>UNDERGRADUATE COURSES</span>
+                            <span class="hover-pointer">UNDERGRADUATE COURSES</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 mb-15">
                     <div class="position-relative" style="max-width: 100%;">
-                        <img src="assets/images/student-international.png" alt="..." class="img-fluid w-100 h-100 object-fit-cover">
+                        <img src="assets/images/courcesImages/student-international.png" alt="..." class="img-fluid w-100 h-100 object-fit-cover">
                         <div class="position-absolute bottom-0 custom-bg text-white text-center justify-content-center align-items-center d-flex px-3 py-2 w-100" style="height: 51px;">
-                            <span>INTERNATIONAL STUDENTS</span>
+                            <span class="hover-pointer">INTERNATIONAL STUDENTS</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 mb-15">
                     <div class="position-relative" style="max-width: 100%;">
-                        <img src="assets/images/graduation-cources.png" alt="..." class="img-fluid w-100 h-100 object-fit-cover">
+                        <img src="assets/images/courcesImages/graduation-cources.png" alt="..." class="img-fluid w-100 h-100 object-fit-cover">
                         <div class="position-absolute bottom-0 custom-bg text-white text-center justify-content-center align-items-center d-flex px-3 py-2 w-100" style="height: 51px;">
-                            <span>GRADUATE COURSES</span>
+                            <span class="hover-pointer">GRADUATE COURSES</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 mb-15">
                     <div class="position-relative" style="max-width: 100%;">
-                        <img src="assets/images/scholarships.png" alt="..." class="img-fluid w-100 h-100 object-fit-cover">
+                        <img src="assets/images/courcesImages/scholarships.png" alt="..." class="img-fluid w-100 h-100 object-fit-cover">
                         <div class="position-absolute bottom-0 custom-bg text-white text-center justify-content-center align-items-center d-flex px-3 py-2 w-100" style="height: 51px;">
-                            <span>SCHOLARSHIPS</span>
+                            <span class="hover-pointer">SCHOLARSHIPS</span>
                         </div>
                     </div>
                 </div>
@@ -181,8 +185,8 @@
             <div class="card bg-light rounded-0" style="width: 100%; height:auto;">
                 <div class="card-body">
                     <h2 class="news-title mb-15 text-dark">NEWS</h2>
-                    <p class="card-subtitle mb-6 opacity-75 text-dark fs-6">January 06, 2017</p>
-                    <p class="card-text fs-5 text-dark mb-6">Smart Exhibition Upends Classical Style</p>
+                    <p class="card-subtitle mb-6 text-dark fs-6">January 06, 2017</p>
+                    <p class="card-text fs-5 text-dark mb-6 fw-600">Smart Exhibition Upends Classical Style</p>
                     <p class="card-text text-dark fs-6 text-muted">Even the most casual observer is probably acquainted with the Classical style, that aesthetic anchored in the ancient…</p>
                     <div class="text-end">
                         <a href="#" class="card-text text-dark fw-bold fs-6 text-decoration-none">READ MORE</a>
@@ -190,8 +194,8 @@
                 </div>
                 <hr class="text-muted mx-21">
                 <div class="card-body">
-                    <p class="card-subtitle mb-6 opacity-75 text-dark fs-6">December 13, 2016</p>
-                    <p class="card-text fs-5 text-dark  mb-6">Sciences University To Offer Now Undergraduate Major In Creative Writing</p>
+                    <p class="card-subtitle mb-6 text-dark fs-6">December 13, 2016</p>
+                    <p class="card-text fs-5 text-dark  mb-6 fw-600">Sciences University To Offer Now Undergraduate Major In Creative Writing</p>
                     <p class="card-text text-dark fs-6 text-muted">The Department of English Language and Literature will offer a new undergraduate major in creative writing, beginning…</p>
                     <div class="text-end">
                         <a href="#" class="card-text text-dark fw-bold fs-6 text-decoration-none">READ MORE</a>
@@ -199,8 +203,8 @@
                 </div>
                 <hr class="text-muted mx-21">
                 <div class="card-body">
-                    <p class="card-subtitle mb-6 opacity-75 text-dark fs-6">November 13, 2016</p>
-                    <p class="card-text fs-5 text-dark  mb-6">New Method Uses Heat Flow To Levitate Variety Of Objects</p>
+                    <p class="card-subtitle mb-6 text-dark fs-6">November 13, 2016</p>
+                    <p class="card-text fs-5 text-dark  mb-6 fw-600">New Method Uses Heat Flow To Levitate Variety Of Objects</p>
                     <p class="card-text text-dark fs-6 text-muted">Even the most casual observer is probably acquainted with the Classical style, that aesthetic anchored in the ancient…</p>
                     <div class="text-end">
                         <a href="#" class="card-text text-dark fw-bold fs-6 text-decoration-none">READ MORE</a>
@@ -214,49 +218,50 @@
 
 
                
-   <!-- Status caontainer -->
-   <div class="container-fluid bg-dark mt-22 opensans-font">
+  <!-- Status caontainer -->
+  <div class="container-fluid bg-dark mt-22 opensans-font">
     <div class="row text-center py-28">
       <div class="col-12 col-lg-4 mt-21 mb-21">
-        <img src="assets/images/ready-degree.png" alt="" class="img-fluid mb-16">
+        <img src="assets/images/statusImages/first-icon.png" alt="" class="img-fluid mb-16">
         <div class="number-achieve-cl">90+</div>
         <div class="title-achieve-cl text-left">Profession-ready degree programs</div>
       </div>
       <div class="col-12 col-lg-4 mt-21 mb-21">
-        <img src="assets/images/ready-degree.png" alt="" class="img-fluid mb-16">
+        <img src="assets/images/statusImages/second-icon.png" alt="" class="img-fluid mb-16">
         <div class="number-achieve-cl">#1</div>
         <div class="title-achieve-cl text-left">Our MBA for salary-to-debt ratio</div>
       </div>
       <div class="col-12 col-lg-4 mt-21 mb-21">
-        <img src="assets/images/ready-degree.png" alt="" class="img-fluid mb-16">
+        <img src="assets/images/statusImages/third-icon.png" alt="" class="img-fluid mb-16">
         <div class="number-achieve-cl">100,000</div>
         <div class="title-achieve-cl text-left">Sciences University alumni worldwide</div>
       </div>
     </div>
   </div>
   
-   
-   <div class="text-center opensans-font">
+   <!-- Events text -->
+  <div class="text-center opensans-font">
     <h2 class="text-dark text-center mt-22 mb-16 underline-title">EVENTS</h2>
   </div>
-
+  
+  <!-- Events cards -->
    <div class="container opensans-font" style="height:auto;">
     <div class="row gx-4">
       <!-- First col -->
       <div class="col-12 col-md-6 col-lg-4 mb-9 d-flex justify-content-center">
-        <div class="card" style="width: 360px; border-radius: 0%;">
+        <div class="card" style="width: 360px; border-radius: 0%; height:438px;">
           <div class="position-relative">
-            <img src="assets/images/student-international.png" class="d-block w-100 c-img" alt="...">
+            <img src="assets/images/eventsImages/first-card.png" class="d-block w-100 c-img" alt="...">
             <div class="position-absolute top-0 end-0 me-2 mt-2">
               <img src="assets/images/date-shape.png" alt="date image">
               <div class="date-pos position-absolute text-center text-dark" style="top:60%; left: 50%; transform: translate(-50%, -50%);">
-                <div style="font-size:14px; font-weight: bold; line-height:1.06;">18</div>
-                <div style="font-size: 12px; font-weight: bold; line-height:1.58;">March</div>
+                <div style="font-size:18px; font-weight: 800; line-height:1.06;">18</div>
+                <div class="fw-bold" style="font-size:12px; font-weight: bold; line-height:1.06;">March</div>
               </div>
             </div>
           </div>
-          <div class="card-body text-dark">
-            <div class="d-inline">
+          <div class="card-body text-dark py-7">
+            <div class="time-text d-inline">
               <span>2:00 P.M - 4:00 P.M.</span>
               <span class="mx-2">|</span>
               <span>Ajloun Campus</span>
@@ -265,92 +270,209 @@
             <p class="card-text mt-6">
               Our Postgraduate Drop-in Evenings are an excellent opportunity for you to meet our staff and talk to current students…
             </p>
-            <div class="text-end mt-15">
-              <a href="#" class="card-text text-dark fw-bold fs-6 text-decoration-none">LEARN MORE</a>
+            <div class="text-end mt-34">
+              <a href="#" class="card-text-link text-dark fw-bold text-decoration-none">LEARN MORE</a>
             </div>
           </div>
         </div>
       </div>
+
       <!-- Second col -->
       <div class="col-12 col-md-6 col-lg-4 mb-9 d-flex justify-content-center">
-        <div class="card" style="width: 360px; border-radius: 0%;">
+        <div class="card" style="width: 360px; border-radius: 0%; height:438px;">
           <div class="position-relative">
-            <img src="assets/images/student-international.png" class="d-block w-100 c-img" alt="...">
+            <img src="assets/images/eventsImages/second-card.png" class="d-block w-100 c-img" alt="...">
             <div class="position-absolute top-0 end-0 me-2 mt-2">
               <img src="assets/images/date-shape.png" alt="date image">
               <div class="date-pos position-absolute text-center text-dark" style="top:60%; left: 50%; transform: translate(-50%, -50%);">
-                <div style="font-size:14px; font-weight: bold; line-height:1.06;">18</div>
-                <div style="font-size: 12px; font-weight: bold; line-height:1.58;">March</div>
+                <div style="font-size:18px; font-weight: 800; line-height:1.06;">07</div>
+                <div class="fw-bold" style="font-size:12px; font-weight: bold; line-height:1.06;">May</div>
               </div>
             </div>
           </div>
-          <div class="card-body text-dark">
-            <div class="d-inline">
+          <div class="card-body text-dark py-7">
+            <div class="time-text d-inline">
               <span>2:00 P.M - 4:00 P.M.</span>
               <span class="mx-2">|</span>
               <span>Ajloun Campus</span>
             </div>
-            <h5 class="card-title mt-6 fw-bold">Postgraduate Drop-in Evening</h5>
+            <h5 class="card-title mt-6 fw-bold">Undergraduate Music Open Day</h5>
             <p class="card-text mt-6">
-              Our Postgraduate Drop-in Evenings are an excellent opportunity for you to meet our staff and talk to current students…
+              Music open days are aimed at candidates who have made Kingston University one of their university choices…
             </p>
-            <div class="text-end mt-15">
-              <a href="#" class="card-text text-dark fw-bold fs-6 text-decoration-none">LEARN MORE</a>
+            <div class="text-end mt-34">
+              <a href="#" class="card-text-link text-dark fw-bold text-decoration-none">LEARN MORE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Third col -->
+      <div class="col-12 col-md-6 col-lg-4 mb-9 d-flex justify-content-center">
+        <div class="card" style="width: 360px; border-radius: 0%; height:438px;">
+          <div class="position-relative">
+            <img src="assets/images/eventsImages/second-card.png" class="d-block w-100 c-img" alt="...">
+            <div class="position-absolute top-0 end-0 me-2 mt-2">
+              <img src="assets/images/date-shape.png" alt="date image">
+              <div class="date-pos position-absolute text-center text-dark" style="top:60%; left: 50%; transform: translate(-50%, -50%);">
+                <div style="font-size:18px; font-weight: 800; line-height:1.06;">20</div>
+                <div class="fw-bold" style="font-size:12px; font-weight: bold; line-height:1.06;">August</div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body text-dark py-7">
+            <div class="time-text d-inline">
+              <span>4:00 P.M - 6:00 P.M.</span>
+              <span class="mx-2">|</span>
+              <span>Amman Campus</span>
+            </div>
+            <h5 class="card-title mt-6 fw-bold">Making Nature’ Exhibition At Wellcome Collection</h5>
+            <p class="card-text mt-6">
+              The question of how humans relate to other animals has captivated, scientists, ethicists and artists for centuries...
+            </p>
+            <div class="text-end mt-6">
+              <a href="#" class="card-text-link text-dark fw-bold text-decoration-none">LEARN MORE</a>
             </div>
           </div>
         </div>
       </div>
       <!-- Third col -->
-      <div class="col-12 col-md-6 col-lg-4 mb-9 d-flex justify-content-center">
-        <div class="card" style="width: 360px; border-radius: 0%;">
-          <div class="position-relative">
-            <img src="assets/images/student-international.png" class="d-block w-100 c-img" alt="...">
-            <div class="position-absolute top-0 end-0 me-2 mt-2">
-              <img src="assets/images/date-shape.png" alt="date image">
-              <div class="date-pos position-absolute text-center text-dark" style="top:60%; left: 50%; transform: translate(-50%, -50%);">
-                <div style="font-size:14px; font-weight: bold; line-height:1.06;">18</div>
-                <div style="" class="fw-bold cutom-date">March</div>
-              </div>
-            </div>
-          </div>
-          <div class="card-body text-dark">
-            <div class="d-inline">
-              <span>2:00 P.M - 4:00 P.M.</span>
-              <span class="mx-2">|</span>
-              <span>Ajloun Campus</span>
-            </div>
-            <h5 class="card-title mt-6 fw-bold fs-20">Postgraduate Drop-in Evening</h5>
-            <p class="card-text mt-6">
-              Our Postgraduate Drop-in Evenings are an excellent opportunity for you to meet our staff and talk to current students…
-            </p>
-            <div class="text-end mt-15">
-              <a href="#" class="card-text text-dark fw-bolder fs-12 text-decoration-none">LEARN MORE</a>
-            </div>
-          </div>
-        </div>
-      </div>
+
     </div>
   </div>
   
-  <!-- Done till here !!!-->
+  <!-- Apply image-->
+  <div class="overlay-container mt-22">
+    <img src="assets/images/apply-background.png" alt="Background Image" class="overlay-image">
+    <div class="overlay-content">
+        <p> ADMISSIONS ARE NOW OPEN FOR
+            <span class="d-none d-md-inline"> <br> </span>
+            <span class="d-inline d-md-none"> </span>
+            2017/2018 INTAKE
+        </p>
+        <a href="#" class="btn btn-dark rounded-0">APPLY NOW!</a>
+    </div>
+  </div>
   
-  <div class="container-fluid mt-9" style="height: 549px;">
-    <img src="assets/images/apply-background.png" class="img-fluid w-100 h-100" alt="Responsive image">
+  
+  <!-- Form --> 
+  <div class="container bg-light mt-22 text-center px-md-30 px- py-14" id="form-container">
+    <span class="text-dark text-center underline-title fw-bold">GET IN TOUCH</span>
+    <form id="contactForm" class="row justify-content-center" onsubmit="clearForm(event)">
+      <div class="col-md-6 mt-16">
+        <input id="fullName" name="fullName" type="text" class="form-control rounded-0 mx-auto" placeholder="Full Name" required>
+      </div>
+      <div class="col-md-6 mt-16">
+        <input id="phoneNumber" name="phoneNumber" type="text" class="form-control rounded-0 mx-auto" placeholder="Phone Number">
+      </div>
+      <div class="col-md-12 mt-21">
+        <input id="email" name="email" type="email" class="form-control rounded-0 mx-auto" placeholder="Email" required>
+      </div>
+      <div class="col-md-12 mt-21">
+        <textarea id="message" name="message" class="form-control rounded-0 mx-auto" placeholder="Message" rows="8"></textarea>
+      </div>
+      <div class="col-md-12 mt-16 text-center"> 
+        <button type="submit" class="btn rounded-0 px-9 py-3 submit-btn">SUBMIT</button> 
+      </div>
+    </form>
   </div>
 
   
 
-  
+  <!-- Footer -->
+  <footer class="text-white bg-dark mt-22">
+    <!-- Section: Links  -->
+    <section class="footer-container">
+      <div class="container">
+        <!-- Grid row -->
+        <div class="row pt-32">
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-3 footer-column">
+            <!-- Links -->
+            <div class="text-uppercase footer-title mb-24">EXPLORE</div>
+            <div class="mb-6"><a href="#!" class="footer-item">Privacy and Cookies</a></div>
+            <div class="mb-6"><a href="#!" class="footer-item">Legal Information</a></div>
+            <div class="mb-6"><a href="#!" class="footer-item">About the University</a></div>
+            <div class="mb-6"><a href="#!" class="footer-item">News and Events</a></div>
+            <div class="mb-6"><a href="#!" class="footer-item">Research</a></div>
+            <div class="mb-6"><a href="#!" class="footer-item">Schools and Departments</a></div>
+            <div class="mb-6"><a href="#!" class="footer-item">International</a></div>
+            <div class="mb-6"><a href="#!" class="footer-item">Job Vacancies</a></div>
+          </div>
+          <!-- Grid column -->
 
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-3 footer-column">
+            <!-- Links -->
+            <div class="text-uppercase footer-title mb-24">QUICK LINKS</div>
+            <div class="mb-6"><a href="#!" class="footer-item">Online Payments</a></div>
+            <div class="mb-6"><a href="#!" class="footer-item">Library</a></div>
+            <div class="mb-6"><a href="#!" class="footer-item">Alumni</a></div>
+            <div class="mb-6"><a href="#!" class="footer-item">Community Information</a></div>
+            <!-- other links section same col-->
+            <div class="text-uppercase footer-title mb-24 mt-15">USING OUR SITE</div>
+            <div class="mb-6"><a href="#!" class="footer-item">Accessibility</a></div>
+            <div class="mb-6"><a href="#!" class="footer-item">Freedom of Information</a></div>
+          </div>
+          <!-- Grid column -->
 
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-3 footer-column">
+            <!-- Links -->
+            <div class="text-uppercase footer-title mb-24">HOW TO FIND US</div>
+            <ul class="list-unstyled footer-list">
+              <li class="footer-item mb-6">
+                <a href="#!" class="footer-item"><i class="fas fa-phone flip-icon me-6"></i>+ 1 (408) 703 8738</a>
+              </li>
+              <li class="footer-item mb-6">
+                <a href="#!" class="footer-item"><i class="fas fa-phone flip-icon me-6"></i>+ 962 6 581 7612</a>
+              </li>
+              <li class="footer-item mb-6">
+                <a href="#!" class="footer-item"><i class="fas fa-envelope me-6"></i>info@SciencesUniversity.edu</a>
+              </li>
+              <li class="footer-item mb-6">
+                <a href="#!" class="footer-item"><i class="fas fa-envelope me-6"></i>Contact Us</a>  
+              </li>
+              <li class="footer-item mb-6">
+                <a href="#!" class="footer-item"><i class="fas fa-map-marker-alt me-6"></i>Find Us</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
 
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-2 footer-column">
+            <!-- Image -->
+            <div class="footer-image mb-33 text-white">
+              <img src="assets/images/footer-logo.png" class="img" alt="University Logo" width="139px" height="49px">
+            </div>
+            <!-- Social Media Icons -->
+            <div class="footer-title">FOLLOW US</div>
+            <div class="social-icons mt-24">
+              <a class="nav-link fab fa-linkedin fa-lg me-6" aria-current="page" href="#"></a>
+              <a class="nav-link fab fa-youtube fa-lg me-6" href="#"></a>
+              <a class="nav-link fab fa-instagram fa-lg me-6" href="#"></a>
+              <a class="nav-link fab fa-twitter fa-lg me-6" href="#"></a>
+              <a class="nav-link fab fa-facebook fa-lg me-6" href="#"></a>
+            </div>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+    <!-- Copyright -->
+    <div class="text-center py-6 mt-32 copyright-style" style="background-color: #223663;">
+      © 2017 Sciences University. All Rights Reserved.
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
 
-
-
-
-
-    <!-- Bootstrap and jQuery JS -->
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/navbar.js"></script>
+  <!-- Bootstrap and jQuery JS -->
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/form.js"></script>
 </body>
 </html>

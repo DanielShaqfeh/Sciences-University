@@ -1,8 +1,12 @@
+// Variables 
 $dark: #021a4e;
 $primary:#4a4a4a;
 $numCol:#e4c800;
+
+// Spacers 
 $spacer: 1rem!default;
 $spacers: (
+    // con....
     6: ($spacer * 0.625), //10px 
     7: $spacer * 0.8125, //13px 
     8: ($spacer * 1.4375), //23px 
@@ -27,6 +31,11 @@ $spacers: (
     27:$spacer*7.5,// 120px
     28:$spacer*3.75,//60px
     29:$spacer*0.75,//12px 
+    30:$spacer*6.125, //98px 
+    31:$spacer*1.125, //18px
+    32:$spacer*3.875, // 62px
+    33:$spacer*2.46875, // 39.5px
+    34:$spacer*2, // 32px
 ) !default;
 body{
     font-family: 'Open Sans', sans-serif;
@@ -34,12 +43,15 @@ body{
     padding: 0;
 }
 
+// NEWS text title
 .news-title {
     position: relative;
     display: inline-block;
     padding-bottom: 3px; 
     font-family: 'Open Sans', sans-serif;
 }
+
+// New underline 
 .news-title::after {
     content: '';
     position: absolute;
@@ -48,29 +60,16 @@ body{
     width: 100%;
     height: 3px;
     background-color: $dark;
-    
 }
 
-.underline-title {
-    position: relative;
-    display: inline-block;
-    padding-bottom: 3px;
+.card-text,.card-title{
+    font-size: 16px;
 }
-
-.underline-title::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 3px;
-    background-color: $dark; 
-}
-  
-.opensans-font{
-    font-family: 'Open Sans', sans-serif;
+.time-text,.card-text-link{
+    font-size: 14px
 }
 @import "../node_modules/bootstrap/scss/bootstrap";
+
 
 
 
